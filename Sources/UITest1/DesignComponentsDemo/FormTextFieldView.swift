@@ -72,7 +72,7 @@ public class FormTextFieldView: UIView {
         textField.borderStyle = .roundedRect
     }
     
-    func set(titleText: String, textFieldPlaceholder: String) {
+    public func set(titleText: String, textFieldPlaceholder: String) {
         titleLabel.text = titleText
         textField.placeholder = textFieldPlaceholder
     }
