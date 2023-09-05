@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CheckBoxSelectionDelegate: AnyObject {
+public protocol CheckBoxSelectionDelegate: AnyObject {
     func didSelectCheckBox(indexes: [Int])
 }
 
@@ -15,12 +15,12 @@ extension CheckBoxSelectionDelegate {
     func calculateCheckBoxViewHeight(height: CGFloat) {}
 }
 
-public  class CheckBoxView: UIView {
+public class CheckBoxView: UIView {
     
     var selectedIndexes = [Int]()
     var allowMultipleSelection = true
     
-    var delegate: CheckBoxSelectionDelegate?
+    public var delegate: CheckBoxSelectionDelegate?
     
     private let stackView: UIStackView = {
         let view = UIStackView()
@@ -54,7 +54,7 @@ public  class CheckBoxView: UIView {
         ])
     }
     
-    func set(_ options: [String]) {
+    public func set(_ options: [String]) {
         radioViews.removeAll()
         stackView.removeAllArrangedSubviews()
         

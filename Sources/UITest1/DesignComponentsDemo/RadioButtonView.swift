@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol RadioSelectionDelegate: AnyObject {
+public protocol RadioSelectionDelegate: AnyObject {
     func didSelectRadioButton(indexes: [Int])
 }
 
@@ -20,7 +20,7 @@ public class RadioButtonView: UIView {
     var selectedIndexes = [Int]()
     var allowMultipleSelection = false
     
-    var delegate: RadioSelectionDelegate?
+    public var delegate: RadioSelectionDelegate?
     
     private let stackView: UIStackView = {
         let view = UIStackView()
@@ -54,7 +54,7 @@ public class RadioButtonView: UIView {
         ])
     }
     
-    func set(_ options: [String]) {
+    public func set(_ options: [String]) {
         radioViews.removeAll()
         stackView.removeAllArrangedSubviews()
         
