@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     
-    static let radio = UIImage(named: "radio_deselected")
+    static let radio = UIImage(named: "radio")
     static let radioSelected = UIImage(named: "radio_selected")
     
 }
