@@ -16,7 +16,7 @@ public class SecondaryButton: UIButton {
         }
     }
     
-    override var isEnabled: Bool {
+    public override var isEnabled: Bool {
         didSet {
             self.textStyle = isEnabled ? .secondaryButton : .secondaryButtonDisabled
         }

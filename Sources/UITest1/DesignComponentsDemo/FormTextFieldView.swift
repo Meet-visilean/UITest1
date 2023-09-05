@@ -10,8 +10,8 @@ import UIKit
 public class FormTextFieldView: UIView {
     
     // MARK: - Properties
-    private var titleLabel = UILabel()
-    private var textField = UITextField()
+     var titleLabel = UILabel()
+     var textField = UITextField()
     
     // MARK: - Initializers
     override init(frame: CGRect) {
