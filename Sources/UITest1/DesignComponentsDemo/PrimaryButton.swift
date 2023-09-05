@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PrimaryButton: UIButton {
+public class PrimaryButton: UIButton {
     
     // MARK: - Properties
     var textStyle: TextStyle = .primaryButton {
@@ -16,7 +16,7 @@ class PrimaryButton: UIButton {
         }
     }
     
-    override var isEnabled: Bool {
+    public override var isEnabled: Bool {
         didSet {
             self.textStyle = isEnabled ? .primaryButton : .primaryButtonDisabled
         }

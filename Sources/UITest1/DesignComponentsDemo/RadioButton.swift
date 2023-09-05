@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RadioButton: UIControl {
+public class RadioButton: UIControl {
     
     private var textStyle: TextStyle = .radioButton
     

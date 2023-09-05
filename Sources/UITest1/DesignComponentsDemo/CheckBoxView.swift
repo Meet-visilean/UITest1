@@ -15,7 +15,7 @@ extension CheckBoxSelectionDelegate {
     func calculateCheckBoxViewHeight(height: CGFloat) {}
 }
 
-class CheckBoxView: UIView {
+public  class CheckBoxView: UIView {
     
     var selectedIndexes = [Int]()
     var allowMultipleSelection = true

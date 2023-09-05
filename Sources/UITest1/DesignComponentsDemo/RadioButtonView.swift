@@ -15,7 +15,7 @@ extension RadioSelectionDelegate {
     func calculateRadioViewHeight(height: CGFloat) {}
 }
 
-class RadioButtonView: UIView {
+public class RadioButtonView: UIView {
     
     var selectedIndexes = [Int]()
     var allowMultipleSelection = false

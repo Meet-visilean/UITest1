@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondaryButton: UIButton {
+public class SecondaryButton: UIButton {
     
     // MARK: - Properties
     var textStyle: TextStyle = .secondaryButton {

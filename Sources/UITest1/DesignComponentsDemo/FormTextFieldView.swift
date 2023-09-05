@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FormTextFieldView: UIView {
+public class FormTextFieldView: UIView {
     
     // MARK: - Properties
     private var titleLabel = UILabel()

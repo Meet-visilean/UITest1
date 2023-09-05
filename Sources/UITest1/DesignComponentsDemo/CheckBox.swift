@@ -7,12 +7,12 @@
 
 import UIKit
 
-class CheckBox: UIControl {
+public class CheckBox: UIControl {
     
-    private var textStyle: TextStyle = .checkBox
+    var textStyle: TextStyle = .checkBox
     
-    private var image: UIImage? = UIImage(named: "checkBox")
-    private var selectedImage: UIImage? = UIImage(named: "checkBox_selected")
+    var image: UIImage? = UIImage(named: "checkBox")
+    var selectedImage: UIImage? = UIImage(named: "checkBox_selected")
     
     var title: String = "" {
         didSet {
